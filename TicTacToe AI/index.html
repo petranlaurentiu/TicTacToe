@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tic Tac Toe AI</title>
+    
+<body>
+  <div class="container">
+    <!-- Table tag for representing our tic-tac-toe game board 
+    The board has three table row tags each containing three table data tags. This results in a 3×3 game board-->
+  <table class="board" align='center'>
+    <tr>
+      <td>
+          <div id="0" class="square left top"></div>
+      </td>
+      <td>
+          <div id="1" class="square top v-middle"></div>
+      </td>
+      <td>
+          <div id="2" class="square right top"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          <div id="3" class="square left h-middle"></div>
+      </td>
+      <td>
+          <div id="4" class="square v-middle h-middle"></div>
+      </td>
+      <td>
+          <div id="5" class="square right h-middle"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          <div id="6" class="square left bottom"></div>
+      </td>
+      <td>
+          <div id="7" class="square bottom v-middle"></div>
+      </td>
+      <td>
+          <div id="8" class="square right bottom"></div>
+      </td>
+    </tr> 
+   </table>
+   <br>
+   <div id="messageBox">Pick a square!</div>
+   <br>
+        <!-- Buttons, and drop down list -->
+   <div class="controls">
+     <button class="button" onclick="resetGame()">Play Again</button> 
+     
+     </form>
+     <select id="difficulty">
+       <option value="beginner" selected >Beginner</option>
+       <option value="genius">Genius</option>
+     </select>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

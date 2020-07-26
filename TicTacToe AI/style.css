@@ -1,0 +1,104 @@
+body {
+    background: rgb(102, 178, 255);
+    
+  }
+  
+  main {
+    max-width: 32rem;
+    padding: 2rem;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: rgb(255, 255, 153);
+  }
+  
+  #messageBox {
+    text-align: center;
+    color: rgb(255, 255, 153);
+    border: 2px solid rgb(255, 255, 153);
+    border-radius: 10px;
+    font-size: 24px;
+  }
+  
+  #difficulty {
+    height: 65px;
+    width: 140px; 
+    border-radius: 10px; 
+    font-size: 24px;
+    background-color: rgb(255, 255, 153);
+    color: rgb(95, 95, 95);
+    padding-left: 20px;
+  }
+  
+  .controls {
+    text-align: center;
+  }
+  /* We need to set the size, color, and text positioning of each square. 
+  We need to make the borders visible in the appropriate locations. 
+  We added several classes for identifying where squares are located on the game board, allowing us to create the tic-tac-toe pattern. 
+  We also varied the size of the border to get a more three dimensional look and feel. */
+  .square {
+    display: inline-block;
+    width: 10em;
+    height: 10vh;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 75px;
+    color: rgb(255, 255, 153);
+    
+  }
+  
+  .left {
+    border-right: 1px solid rgb(255, 255, 153);
+  }
+  
+  .right {
+    border-left: 7px solid rgb(255, 255, 153);
+  }
+  
+  .top {
+    border-bottom: 1px solid rgb(255, 255, 153);
+  }
+  
+  .bottom {
+    border-top: 7px solid rgb(255, 255, 153);
+  }
+  
+  .v-middle {
+     border-right: 1px solid rgb(255, 255, 153);
+     border-left: 7px solid rgb(255, 255, 153);
+  }
+  
+  .h-middle {
+     border-top: 7px solid rgb(255, 255, 153);
+     border-bottom: 1px solid rgb(255, 255, 153);
+  }
+  
+  
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #666;
+    background-color: rgb(255, 255, 153);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: rgb(224, 224, 139)}
+  
+  .button:active {
+    background-color: rgb(224, 224, 139);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+ 
